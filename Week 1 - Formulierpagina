@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title> Aanmelden </title>
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+<body> 
+<article> 
+<header><h1>Aanmelden</h1></header>
+
+
+<p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!!
+Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar. </p>
+
+    <p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+
+<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. 
+Voor vragen of opmerkingen kunt u contact [link: contact] met ons op.</p>
+    
+
+
+
+<form>
+<fieldset>
+    <legend> Contactgegevens</legend>
+        
+        <label id="Naam"> Naam: 
+        <input type="text"/> </label> <br>
+    
+        <label id="Bedrijf"> Bedrijf:
+            <input type="text"/> </label> <br>
+    
+        <label id="Postcode"> Postcode: 
+            <input type="text" id="postcode" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/>                </label> <br>
+    
+        <label id="Adres"> Adres: 
+            <input type="text"/> </label> <br>
+    
+        <label id="Plaats"> Plaats: 
+        <input type="text"/> </label> <br>
+    
+        <label id="Telefoon"> Telefoon: 
+        <input type="tel"/> </label> <br>
+    
+        <label id="Email"> Email: 
+        <input type="email"/> </label> <br>
+
+</fieldset>
+
+<fieldset>
+    <p> Ik wil mijn aanmelden: </p>
+        
+        <select name="Keuze">
+            <option value="Project"> Voor een project </option>
+            <option value="Stage"> Als stagebedrijf</option>
+        </select>
+
+</fieldset>
+</form>
+  
+    
+<form>
+<fieldset>
+
+    <legend>Project</legend>
+      
+                <label>Titel:
+				<input type="text" id="titel"></label> <br>
+         
+				<label>Opdrachtomschrijving:
+				<input type="text" id="opdracht"></label> <br>
+            
+                <label>Doelgroepomschrijving:
+				<input type="text" id="doelgroep"></label> <br>
+            
+                <label>Looptijd:
+				<input type="text" id="looptijd"></label> <br>
+            
+                <label>Deadline:
+                <input type="date" id="deadline"></label> <br>
+							
+    
+    <p>Geschikt voor:</p>
+							
+                <label>Eerstejaars studenten
+				<input type="checkbox" id="eerstejaars" value="eerstejaars"></label>
+				
+                <label>Tweedejaars studenten
+				<input type="checkbox" id="tweedejaars" value="tweedejaars"></label>
+				
+                <label>Derdejaars studenten
+				<input type="checkbox" id="derdejaars" value="derdejaars"></label>
+							
+                <label>Afstudeer studenten
+                <input type="checkbox" id="afstudeer" value="afstudeer"></label>
+							
+                <label>Onbekend
+				<input type="checkbox" name="onbekend" value="onbekend"></label>
+					
+
+</fieldset>
+
+
+<fieldset>
+    
+    <legend>Stage</legend>
+
+    <p>Geschikt voor:</p>
+                
+                <label>Tweedejaars studenten
+				<input type="checkbox" id="tweedejaarsstage" value="tweedejaarsstage"> </label>
+						
+                <label>Afstudeer studenten
+				<input type="checkbox" id="afstudeerstage" value="afstudeerstage"></label>
+    
+                    
+    <p>Hoe lang is de stage?</p>
+				
+                <label>10 weken
+				<input type="radio" id="tienweken" value="tienweken"></label>
+				
+                <label>20 weken
+				<input type="radio" id="twintigweken" value="twintigweken"></label>	
+						
+                    
+    <ul>
+        <li>
+				<label>Begindatum:
+				<input type="date" id="begindatum"></label>
+        </li>	
+							
+        <li>
+				<label>Beschrijving werkzaamheden:
+				<input type="text" id="werkzaamheden"></label>
+        </li>
+    </ul>
+					
+</fieldset>
+</form>
+
+    
+    
+</article>
+</body>

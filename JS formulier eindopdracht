@@ -1,0 +1,33 @@
+// selecteer de fieldset die we aan en uit willen zetten
+var fieldset = document.getElementById('project');
+var fieldset2 = document.getElementById('stage');
+
+// hide deze fieldset
+fieldset.classList.add('is-invisible');
+fieldset2.classList.add('is-invisible');
+
+// selecteer de eerste button die je ziet
+document.querySelector('input[value="1"]').onclick = function() {
+	fieldset.classList.add('is-visible');
+	fieldset2.classList.remove('is-visible');
+}
+
+// select tweede button 
+document.querySelector('input[value="2"]:last-of-type').onclick = function() {
+	fieldset.classList.remove('is-visible');
+	fieldset2.classList.add('is-visible');
+}
+
+
+//hamburger menu
+
+var hamburger = document.querySelector('header:first-of-type > button');
+var menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', function() {
+    if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+    } else {
+        menu.classList.add('open');
+    }
+});
